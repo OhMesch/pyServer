@@ -5,8 +5,8 @@ PORT = 8080
 MAX_CONNECTIONS = 4
 
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-serversocket.bind((HOST, PORT))
-print("Binded to " + HOST + " Port " + str(PORT))
+serversocket.bind(('', PORT))
+print("Binded to " + socket.gethostname() + " Port " + str(PORT))
 serversocket.listen(MAX_CONNECTIONS)
 
 connection, address = serversocket.accept()
