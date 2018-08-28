@@ -1,7 +1,7 @@
 import socket
 
-PORT = 80
-MAX_CONNECTIONS = 5
+PORT = 8080
+MAX_CONNECTIONS = 4
 
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 serversocket.bind(('localhost', PORT))
