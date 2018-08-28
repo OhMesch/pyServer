@@ -1,6 +1,6 @@
 import socket
 
-HOST = "73.218.10.56"
+HOST = ""
 PORT = 8080
 
 clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
