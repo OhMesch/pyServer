@@ -1,10 +1,12 @@
 import socket
 
+HOST = 'localhost'
 PORT = 8080
 MAX_CONNECTIONS = 4
 
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-serversocket.bind(('localhost', PORT))
+serversocket.bind((HOST, PORT))
+print("Binded to " + HOST + " Port " + PORT)
 serversocket.listen(MAX_CONNECTIONS)
 
 connection, address = serversocket.accept()
