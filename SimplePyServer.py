@@ -1,6 +1,6 @@
 import socket
 
-HOST = 'localhost'
+HOST = '73.218.10.56'
 PORT = 8080
 MAX_CONNECTIONS = 4
 
