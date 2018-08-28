@@ -6,7 +6,7 @@ MAX_CONNECTIONS = 4
 
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 serversocket.bind((HOST, PORT))
-print("Binded to " + HOST + " Port " + PORT)
+print("Binded to " + HOST + " Port " + str(PORT))
 serversocket.listen(MAX_CONNECTIONS)
 
 connection, address = serversocket.accept()
